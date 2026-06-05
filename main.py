@@ -64,7 +64,7 @@ def put_korean_text(img, text, pos, font_size=28, color=(0, 255, 100)):
         img_pil = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
         draw = ImageDraw.Draw(img_pil)
         try:
-            font = ImageFont.truetype("C:/Windows/Fonts/malgun.ttf", font_size)
+            font = ImageFont.truetype("C:/Windows/Fonts/simsun.ttc", font_size)
         except:
             font = ImageFont.load_default()
         draw.text(pos, text, font=font, fill=color)
